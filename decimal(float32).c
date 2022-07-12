@@ -35,7 +35,7 @@ float cvtbd(const char* const str, int* error) {
 
     for (int count = 1; count < 24; ++count, ++idx) {
         if (str[idx] == '1')
-            fraction += (1.0 / (double)(1 << count));
+            fraction += (1.0 / (float)(1 << count));
         else if (str[idx] == '0')
             continue;
         else
